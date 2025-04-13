@@ -287,7 +287,7 @@ class CompanyOut(Schema):
 
 @api.post("/companies")
 def create_company(request, payload: CompanyIn):
-    company = Company(**payload.dict()) # Create a new Company instance   
+    company = Company(**payload.dict()) 
     company.save()
     return {"success": True, "company": company}
 

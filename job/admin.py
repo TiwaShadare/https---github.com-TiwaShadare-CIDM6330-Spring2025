@@ -3,7 +3,7 @@ from django.contrib import admin
 from .models import Applicant, Job, Application, Recruiter, Interview, Offer, Company
 
 
-# Register your models here.
+# Register your models her
 
 @admin.register(Applicant)
 class ApplicantAdmin(admin.ModelAdmin):
